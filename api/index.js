@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
       } else if (text.includes('bye')) {
         await bot.telegram.sendMessage(chatId, catResponses.bye);
       } else {
-        await bot.telegram.sendMessage(chatId, `Purr! Tumne kaha "${text}", aur main kehti hoon... Meow! 😻`);
+        await bot.telegram.sendMessage(chatId, Purr! Tumne kaha "${text}", aur main kehti hoon... Meow! 😻);
       }
 
       return res.status(200).send('OK');
